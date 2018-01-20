@@ -47,15 +47,15 @@ public class HtmlIncludeStatement {
     }
 
     private String toStringCss(){
-        String _output = "<link rel=\"stylesheet\" type=\"text/css\" th:href=\"@{";
+        String _output = "<link rel=\"stylesheet\" type=\"text/css\" href=\"";
         _output += source;
-        _output += "}\"></link>";
+        _output += "\"></link>";
         return  _output;
     }
     private String toStringJs(){
-        String _output = "<script th:src=\"@{";
+        String _output = "<script src=\"";
         _output+= source;
-        _output+= "}\"></script>";
+        _output+= "\"></script>";
         return _output;
     }
 
@@ -74,17 +74,17 @@ public class HtmlIncludeStatement {
     }
 
     private String getSourceJavascript(HtmlTagImpl __htmlTagImpl){
-        XmlAttribute  _srcAttribute = __htmlTagImpl.getAttribute("src");
+        XmlAttribute  _srcAttribute = __htmlTagImpl.getAttribute("th:src");
         PsiElement[] _elements =  _srcAttribute.getChildren();
         XmlAttributeValue _value = (XmlAttributeValue)_elements[2];
-        return _value.getValue();
+        return _value.getValue().substring(2, _value.getValue().length()-1);
     }
 
     private String getSourceCss(HtmlTagImpl __htmlTagImpl){
-        XmlAttribute  _srcAttribute = __htmlTagImpl.getAttribute("href");
+        XmlAttribute  _srcAttribute = __htmlTagImpl.getAttribute("th:href");
         PsiElement[] _elements =  _srcAttribute.getChildren();
         XmlAttributeValue _value = (XmlAttributeValue)_elements[2];
-        return _value.getValue();
+        return _value.getValue().substring(2, _value.getValue().length()-1);
     }
 
     private Type getType(HtmlTagImpl __htmlTagImpl){

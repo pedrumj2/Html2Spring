@@ -19,6 +19,7 @@ public class HtmlToSpringAction extends AnAction {
     private String source;
     private String dest;
     private Project project;
+    private String base;
 
     public HtmlToSpringAction() throws IOException {
         super("_Convertor");
@@ -27,10 +28,10 @@ public class HtmlToSpringAction extends AnAction {
     private void init(AnActionEvent __event){
         project = __event.getProject();
         assert project != null;
-        String base = project.getBasePath();
+        base = project.getBasePath();
         Config _config = new Config("config.txt", base + "/plugins");
-        source = base + "/" + _config.getValue("html2spring.source");
-        dest = base + "/" +  _config.getValue("html2spring.dest");
+        source = base + _config.getValue("html2spring.source");
+        dest = base +   _config.getValue("html2spring.dest");
     }
 
     private PsiFile getSourceFile(){
@@ -45,9 +46,13 @@ public class HtmlToSpringAction extends AnAction {
         PsiFile _psiFile= getSourceFile();
         Visitor _visitor = new Visitor();
         _psiFile.accept(_visitor);
-        Convertor _convertor = new Convertor(_visitor.extSourceStatements);
+        Convertor _convertor = new Convertor(_visitor.extSourceStatements, base);
         Writer _writer = new Writer(dest);
-        _writer.write(_convertor.run());
+        try {
+            _writer.write(_convertor.run());
+        } catch (IOException __e) {
+            __e.printStackTrace();
+        }
         _writer.close();
     }
 
