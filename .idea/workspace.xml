@@ -4,7 +4,11 @@
     <list default="true" id="6f2a4188-1d0d-44c5-82c8-5e30d11a3618" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../../util/target/test-classes/resources/config.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../util/target/classes/com/pedrumjalali/util/Config.class" afterPath="$PROJECT_DIR$/../../../util/target/classes/com/pedrumjalali/util/Config.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../util/target/util-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../../../util/target/util-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../util/src/main/java/com/pedrumjalali/util/Config.java" afterPath="$PROJECT_DIR$/../../../util/src/main/java/com/pedrumjalali/util/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../util/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../../../util/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../util/target/surefire-reports/TEST-test.unit.com.pedrumjalali.util.ConfigTest.xml" afterPath="$PROJECT_DIR$/../../../util/target/surefire-reports/TEST-test.unit.com.pedrumjalali.util.ConfigTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../util/target/surefire-reports/test.unit.com.pedrumjalali.util.ConfigTest.txt" afterPath="$PROJECT_DIR$/../../../util/target/surefire-reports/test.unit.com.pedrumjalali.util.ConfigTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../util/util.iml" afterPath="$PROJECT_DIR$/../../../util/util.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -489,7 +493,7 @@
       <patterns />
     </configuration>
     <configuration name="Plugin" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="Wordpress_Plugin" />
+      <module name="html2spring_plugin" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <alternative-path path="$APPLICATION_HOME_DIR$" alternative-path-enabled="true" />
@@ -535,8 +539,20 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
       <module name="Wordpress_Plugin" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="html2spring_plugin" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
@@ -638,7 +654,7 @@
       <workItem from="1516321262435" duration="1659000" />
       <workItem from="1516323008488" duration="5048000" />
       <workItem from="1516380243117" duration="40000" />
-      <workItem from="1516411343725" duration="4017000" />
+      <workItem from="1516411343725" duration="4061000" />
     </task>
     <servers />
   </component>
@@ -675,7 +691,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29804000" />
+    <option name="totallyTimeSpent" value="29848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1773" height="1098" extended-state="6" />
@@ -690,10 +706,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32410136" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14989293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14989293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29581615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29581615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959905" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -888,7 +904,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/pedrumjalali/jetbrains/plugins/libs/html/Parser.java" />
     <entry file="file://$PROJECT_DIR$/src/main.java" />
     <entry file="file://$PROJECT_DIR$/../../../Fax Sender/TEst/src/com/company/Main.java" />
-    <entry file="file://$PROJECT_DIR$/Wordpress_Plugin.iml">
+    <entry file="file://$PROJECT_DIR$/html2spring_plugin.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
@@ -1150,7 +1166,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Wordpress_Plugin</last-edited>
+          <last-edited>html2spring_plugin</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
