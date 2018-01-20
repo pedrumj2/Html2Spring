@@ -19,6 +19,6 @@ and will convert it to
   <link rel="stylesheet" type="text/css" th:href="@{somestyle.css}"></link>
  ```
 
-It will add all content from before.txt before the first include statement and all content int after.txt after the last 
+It will add all content from before.txt before the first include statement and all content in after.txt after the last 
 include statement.
   
